@@ -8,6 +8,12 @@ class InvoiceViewSet(viewsets.ModelViewSet):
 	queryset = Invoice.objects.all()
 	serializer_class = InvoiceSerializer
 
+	# def create(self, request, *args, **kwargs):
+	# 	data = request.DATA
+
+	# 	#invoice_instance = Invoice.objects.create()
+	# 	return Response(serializer.data, status=status.HTTP_201_CREATED,headers=headers)
+
 
 class TransactionViewSet(viewsets.ModelViewSet):
 	queryset = Transaction.objects.all()
