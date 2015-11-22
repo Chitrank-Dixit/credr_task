@@ -9,9 +9,9 @@ class InvoiceAdmin(admin.ModelAdmin):
 admin.site.register(Invoice, InvoiceAdmin)
 
 class TransactionAdmin(admin.ModelAdmin):
-	list_display = ['product','quantity', 'price','line_total']
-	list_filter = ['product','quantity', 'price','line_total']
-	search_fields = ['product','quantity', 'price','line_total']
+	list_display = ['product','quantity', 'price']
+	list_filter = ['product','quantity', 'price']
+	search_fields = ['product','quantity', 'price']
 
 admin.site.register(Transaction, TransactionAdmin)
 
